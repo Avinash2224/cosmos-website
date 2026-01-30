@@ -54,11 +54,11 @@ export default function Works() {
 
     {
       id: 3,
-      title: 'Lulu Hypermarket - Diwali Ad 2',
+      title: 'Lulu Diwali Ad 1',
       category: 'commercial',
       type: 'Advertisement',
       videoUrl: 'https://www.instagram.com/reel/DAs_VQGsKXu/',
-      thumbnail: 'https://images.unsplash.com/photo-1544461429-72ae0b2e30ed?w=800&q=80',
+  thumbnail: '/thumb4.jpg',
       description: 'Diwali celebration campaign',
       platform: 'instagram'
     },
@@ -68,28 +68,28 @@ export default function Works() {
       category: 'commercial',
       type: 'Advertisement',
       videoUrl: 'https://www.instagram.com/reel/DHdi-UzSvcN/',
-      thumbnail: 'https://images.unsplash.com/photo-1533900298318-6b8da08a523e?w=800&q=80',
+  thumbnail: '/thumb6.jpg',
       description: 'Eid celebration campaign',
       platform: 'instagram'
     },
     {
       id: 2,
-      title: 'Lulu Hypermarket - Diwali Ad 1',
+      title: 'Lulu Diwali Ad 2',
       category: 'commercial',
       type: 'Advertisement',
       videoUrl: 'https://www.instagram.com/reel/DBOmqSQyn35/',
-      thumbnail: 'https://images.unsplash.com/photo-1607827448387-a67db1383b59?w=800&q=80',
+  thumbnail: '/thumb5.jpg',
       description: 'Diwali celebration campaign',
       platform: 'instagram'
     },
     // Ad Films
     {
       id: 5,
-      title: 'Commercial Ad 1',
+      title: 'RedBull Summer 21',
       category: 'commercial',
       type: 'Ad Film',
       videoUrl: 'https://www.instagram.com/p/CS_tLnMJLAu/',
-      thumbnail: 'https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=800&q=80',
+  thumbnail: '/thumb7.jpg',
       description: 'Brand storytelling',
       platform: 'instagram'
     },
@@ -147,22 +147,32 @@ export default function Works() {
     // },
     {
       id: 11,
-      title: 'Commercial Ad 7',
+      title: 'FICCI-Magic They Weave',
       category: 'commercial',
       type: 'Ad Film',
       videoUrl: 'https://www.youtube.com/watch?v=ZORiUnkpf-Y',
       embedUrl: 'https://www.youtube.com/embed/ZORiUnkpf-Y',
-      thumbnail: 'https://img.youtube.com/vi/ZORiUnkpf-Y/maxresdefault.jpg',
+  thumbnail: '/thumb8.jpg',
       description: 'Commercial production',
       platform: 'youtube'
     },
+        {
+      id: 29,
+      title: 'RedBull-Dance0ff 22',
+      category: 'other',
+      type: 'Production',
+      videoUrl: 'https://www.instagram.com/p/CSw_PDIh85j/',
+  thumbnail: '/thumb10.jpg',
+      description: 'Visual content',
+      platform: 'instagram'
+    },
     {
       id: 12,
-      title: 'Commercial Ad 8',
+      title: 'Myntra-My City',
       category: 'commercial',
       type: 'Ad Film',
       videoUrl: 'https://www.instagram.com/reel/DJV6l5TSYWD/',
-      thumbnail: 'https://images.unsplash.com/photo-1579762593131-b97ee87a8c77?w=800&q=80',
+  thumbnail: '/thumb9.jpg',
       description: 'Latest campaign',
       platform: 'instagram'
     },
@@ -170,7 +180,7 @@ export default function Works() {
     // Short Films
     {
       id: 13,
-      title: 'Short Film 1',
+      title: 'Happy Hours - Short Film ',
       category: 'short-film',
       type: 'Short Film',
       videoUrl: 'https://youtu.be/mUxjGHdVjk4',
@@ -181,7 +191,7 @@ export default function Works() {
     },
     {
       id: 14,
-      title: 'Short Film 2',
+      title: 'Bezubaan - Short Film ',
       category: 'short-film',
       type: 'Short Film',
       videoUrl: 'https://youtu.be/F8_CFFWOInA',
@@ -203,7 +213,7 @@ export default function Works() {
     // },
     {
       id: 16,
-      title: 'Short Film 4',
+      title: 'Atrocity - Short Film ',
       category: 'short-film',
       type: 'Short Film',
       videoUrl: 'https://youtu.be/SVbKps1t5U0',
@@ -214,7 +224,7 @@ export default function Works() {
     },
     {
       id: 17,
-      title: 'Short Film 5',
+      title: 'Duvidhaa - Short Film ',
       category: 'short-film',
       type: 'Short Film',
       videoUrl: 'https://youtu.be/EY8Po0cnlSU',
@@ -225,7 +235,7 @@ export default function Works() {
     },
     {
       id: 18,
-      title: 'Short Film 6',
+      title: 'Stabdh - Short Film ',
       category: 'short-film',
       type: 'Short Film',
       videoUrl: 'https://youtu.be/fVXLu1bAYpc',
@@ -238,7 +248,7 @@ export default function Works() {
     // Music Videos
     {
       id: 19,
-      title: 'Music Video 1',
+      title: 'Kabira X Bulla Ki Jaana (cover) | Naacheez',
       category: 'music-video',
       type: 'Music Video',
       videoUrl: 'https://youtu.be/zW_nQGXT6Xs',
@@ -249,7 +259,7 @@ export default function Works() {
     },
     {
       id: 20,
-      title: 'Music Video 2',
+      title: 'Kesariya Medley By Naacheez',
       category: 'music-video',
       type: 'Music Video',
       videoUrl: 'https://youtu.be/SCXWsRwYOsk',
@@ -271,7 +281,7 @@ export default function Works() {
     // },
     {
       id: 22,
-      title: 'Music Video 4',
+      title: 'HAUSLA ANTHEM | A SONG DEDICATED TO CORONA WARRIORS',
       category: 'music-video',
       type: 'Music Video',
       videoUrl: 'https://www.youtube.com/watch?v=wjKRJg0Guow',
@@ -282,7 +292,7 @@ export default function Works() {
     },
     {
       id: 23,
-      title: 'Music Video 5',
+      title: 'SAFAR - Utkarsh & Prateek ',
       category: 'music-video',
       type: 'Music Video',
       videoUrl: 'https://www.youtube.com/watch?v=mT5vKkp1GkI',
@@ -293,7 +303,7 @@ export default function Works() {
     },
     {
       id: 24,
-      title: 'Music Video 6',
+      title: 'Song Association With SHRIYA JAIN OFFICIAL',
       category: 'music-video',
       type: 'Music Video',
       videoUrl: 'https://www.youtube.com/watch?v=e2l359PfWQQ',
@@ -304,7 +314,7 @@ export default function Works() {
     },
     {
       id: 25,
-      title: 'Music Video 7',
+      title: 'Raena - Sahil Mishra ft. Utkarsh',
       category: 'music-video',
       type: 'Music Video',
       videoUrl: 'https://youtu.be/KFqE3r_U4yA',
@@ -315,7 +325,7 @@ export default function Works() {
     },
     {
       id: 26,
-      title: 'Music Video 8',
+      title: 'Kaudiyo Mein - Sahil Mishra (Official Music Video)',
       category: 'music-video',
       type: 'Music Video',
       videoUrl: 'https://youtu.be/LNmTS6_-obk',
@@ -326,7 +336,7 @@ export default function Works() {
     },
     {
       id: 27,
-      title: 'Music Video 9',
+      title: 'AAJ | Music Video | Utkarsh K Srivastava',
       category: 'music-video',
       type: 'Music Video',
       videoUrl: 'https://youtu.be/U_PKbm4uTI8',
@@ -347,16 +357,7 @@ export default function Works() {
     //   description: 'Creative production',
     //   platform: 'instagram'
     // },
-    {
-      id: 29,
-      title: 'Featured Work 2',
-      category: 'other',
-      type: 'Production',
-      videoUrl: 'https://www.instagram.com/p/CSw_PDIh85j/',
-      thumbnail: 'https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=800&q=80',
-      description: 'Visual content',
-      platform: 'instagram'
-    },
+
 
 
   ];
