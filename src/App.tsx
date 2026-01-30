@@ -8,17 +8,18 @@ import Silent from './pages/Silent';
 import Contact from './pages/Contact';
 
 function App() {
+  // Always start at top on refresh
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <div className="min-h-screen">
-      {/* Navbar */}
+      {/* Transparent Fixed Navbar */}
       <Navigation />
 
-      {/* offset for fixed navbar */}
-      <main className="pt-20">
+      {/* MAIN CONTENT — NO TOP PADDING */}
+      <main>
         <section id="home">
           <Home />
         </section>
