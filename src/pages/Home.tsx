@@ -10,17 +10,17 @@ export default function Home() {
     {
       icon: Heart,
       title: 'Intentional',
-      description: 'Every frame, every moment is crafted with purpose and care.',
+      description: 'Every frame is shaped around your brand’s purpose. We design visuals that align with your values and speak clearly to your audience',
     },
     {
       icon: Eye,
       title: 'Observant',
-      description: 'We look beyond the surface to capture what truly matters.',
+      description: 'We take the time to understand your brand, your market, and your story capturing what truly sets you apart.',
     },
     {
       icon: Compass,
       title: 'Rooted',
-      description: 'Grounded in timeless values while embracing new perspectives.',
+      description: 'Built on experience and trust, we create work that stands the test of time while staying responsive to an evolving world.',
     },
   ];
 
@@ -94,9 +94,9 @@ export default function Home() {
 
           <FadeIn delay={100}>
             <p className="text-earth-stone text-lg max-w-3xl mx-auto leading-relaxed mb-16">
-              To create visual stories that feel honest, human, and timeless.
-              We believe true impact comes not from trends, but from intention,
-              observation, and care.
+            To help brands tell stories that feel real, relevant, and lasting.
+At Cosmos, we partner closely with our clients to translate their purpose into visuals that connect deeply with people not by chasing trends, but by understanding intent, context, and audience.
+
             </p>
           </FadeIn>
 
