@@ -1,0 +1,29 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-earth-cream text-earth-charcoal font-sans;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+} */
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* optional global styles */
+html {
+  scroll-behavior: smooth;
+}
