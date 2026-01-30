@@ -1,72 +1,28 @@
-// import { useEffect } from 'react';
-
-// interface LoaderProps {
-//   onFinish: () => void;
-// }
-
-// export default function Loader({ onFinish }: LoaderProps) {
-//   useEffect(() => {
-//     const timer = setTimeout(() => {
-//       onFinish();
-//     }, 1800); // ⏱️ duration of loader
-
-//     return () => clearTimeout(timer);
-//   }, [onFinish]);
-
-//   return (
-//     <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-[#f6f1ea]">
-//       <img
-//         src="/logo.png"
-//         alt="Cosmos Logo"
-//         className="w-40 md:w-56 animate-fadeIn"
-//       />
-
-//       {/* animation */}
-//       <style>{`
-//         @keyframes fadeIn {
-//           0% {
-//             opacity: 0;
-//             transform: translateY(10px);
-//           }
-//           100% {
-//             opacity: 1;
-//             transform: translateY(0);
-//           }
-//         }
-
-//         .animate-fadeIn {
-//           animation: fadeIn 1.2s ease forwards;
-//         }
-//       `}</style>
-//     </div>
-//   );
-// }
-
-
 import { useEffect, useRef } from 'react';
 
-interface LoaderProps {
-  onFinish: () => void;
-}
-
-export default function Loader({ onFinish }: LoaderProps) {
-  const loaderRef = useRef<HTMLDivElement>(null);
+export default function Loader({ onExitStart, onFinish }) {
+  const ref = useRef(null);
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      if (loaderRef.current) {
-        loaderRef.current.classList.add('slide-up-exit');
-        // Trigger onFinish IMMEDIATELY after starting exit animation (no animationend wait)
+      if (!ref.current) return;
+
+      // Start BOTH animations
+      ref.current.classList.add('slide-up-exit');
+      onExitStart();
+
+      // Remove loader after animation ends
+      setTimeout(() => {
         onFinish();
-      }
-    }, 1800); // ⏱️ duration of loader
+      }, 900); // must match app animation
+    }, 1800);
 
     return () => clearTimeout(timer);
-  }, [onFinish]);
+  }, [onExitStart, onFinish]);
 
   return (
-    <div 
-      ref={loaderRef} 
+    <div
+      ref={ref}
       className="fixed inset-0 z-[9999] flex items-center justify-center bg-[#f6f1ea]"
     >
       <img
@@ -75,17 +31,10 @@ export default function Loader({ onFinish }: LoaderProps) {
         className="w-40 md:w-56 animate-fadeIn"
       />
 
-      {/* animations */}
       <style>{`
         @keyframes fadeIn {
-          0% {
-            opacity: 0;
-            transform: translateY(10px);
-          }
-          100% {
-            opacity: 1;
-            transform: translateY(0);
-          }
+          from { opacity: 0; transform: translateY(12px); }
+          to { opacity: 1; transform: translateY(0); }
         }
 
         .animate-fadeIn {
@@ -93,18 +42,14 @@ export default function Loader({ onFinish }: LoaderProps) {
         }
 
         @keyframes slideUpExit {
-          0% {
-            opacity: 1;
-            transform: translateY(0);
-          }
-          100% {
-            opacity: 0;
+          to {
             transform: translateY(-100vh);
+            opacity: 0;
           }
         }
-        
+
         .slide-up-exit {
-          animation: slideUpExit 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+          animation: slideUpExit 0.9s cubic-bezier(0.77,0,0.175,1) forwards;
         }
       `}</style>
     </div>

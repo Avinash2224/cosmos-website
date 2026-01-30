@@ -381,32 +381,7 @@ export default function Clients({ onNavigate }: ClientsProps) {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage: 'url(https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=1920)',
-          }}
-        >
-          <div className="absolute inset-0 bg-earth-charcoal/70" />
-        </div>
-
-        <div className="relative z-10 text-center px-6 max-w-4xl">
-          <FadeIn>
-            <h1
-              className="text-5xl md:text-8xl text-white mb-6 tracking-wide"
-              style={{ fontFamily: 'Gotu, sans-serif' }}
-            >
-              Our Clients
-            </h1>
-          </FadeIn>
-          <FadeIn delay={200}>
-            <p className="text-earth-beige text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-              Trusted by leading brands across industries to tell their stories
-            </p>
-          </FadeIn>
-        </div>
-      </section>
+     
 
       {/* Infinite Scrolling Clients Section */}
       <section className="py-24 bg-earth-cream overflow-hidden">

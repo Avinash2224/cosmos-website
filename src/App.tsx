@@ -1,112 +1,127 @@
 // import { useEffect, useState } from 'react';
+// import Loader from './components/Loader';
+// import FloatingBubbles from './components/FloatingBubbles';
 // import Navigation from './components/Navigation';
+
 // import Home from './pages/Home';
+// import Silent from './pages/Silent';
 // import About from './pages/About';
 // import Services from './pages/Services';
 // import Works from './pages/Works';
-// import Silent from './pages/Silent';
 // import Contact from './pages/Contact';
-// import Loader from './components/Loader';
 
 // function App() {
-//   const [loading, setLoading] = useState(true);
+//   const [showLoader, setShowLoader] = useState(true);
+//   const [reveal, setReveal] = useState(false);
 
-//   // prevent scroll while loading
+//   // Disable scroll restore
 //   useEffect(() => {
-//     if (loading) {
-//       document.body.style.overflow = 'hidden';
-//     } else {
-//       document.body.style.overflow = 'auto';
+//     if ('scrollRestoration' in window.history) {
+//       window.history.scrollRestoration = 'manual';
 //     }
-//   }, [loading]);
+//     window.scrollTo(0, 0);
+//   }, []);
 
-//   if (loading) {
-//     return <Loader onFinish={() => setLoading(false)} />;
-//   }
+//   // Lock scroll during transition
+//   useEffect(() => {
+//     document.body.style.overflow = showLoader ? 'hidden' : 'auto';
+//   }, [showLoader]);
 
 //   return (
-//     <div className="min-h-screen">
-//       <Navigation />
+//     <>
+//       {showLoader && (
+//         <Loader
+//           onExitStart={() => setReveal(true)}
+//           onFinish={() => setShowLoader(false)}
+//         />
+//       )}
 
-//       <main>
-//         <section id="home"><Home /></section>
-//         <section id="about"><About /></section>
-//         <section id="services"><Services /></section>
-//         <section id="works"><Works /></section>
-//         <section id="silent"><Silent /></section>
-//         <section id="contact"><Contact /></section>
-//       </main>
+//       {/* APP SLIDES UP FROM BOTTOM */}
+//       <div
+//         className={`min-h-screen bg-[#f6f1ea] transition-transform duration-[900ms] ease-[cubic-bezier(0.77,0,0.175,1)]
+//         ${reveal ? 'translate-y-0' : 'translate-y-full'}`}
+//       >
+//         <Navigation />
+//         <FloatingBubbles />
 
-//       <footer className="bg-earth-charcoal text-earth-beige py-12 text-center">
-//         © {new Date().getFullYear()} Cosmos Media & Productions
-//       </footer>
-//     </div>
+//         <main>
+//           <section id="home"><Home /></section>
+//           <section id="silent"><Silent /></section>
+//           <section id="about"><About /></section>
+//           <section id="services"><Services /></section>
+//           <section id="works"><Works /></section>
+//           <section id="contact"><Contact /></section>
+//         </main>
+
+//         <footer className="bg-earth-charcoal text-earth-beige py-12 text-center">
+//           © {new Date().getFullYear()} Cosmos Media & Productions
+//         </footer>
+//       </div>
+//     </>
 //   );
 // }
 
 // export default App;
 
 import { useEffect, useState } from 'react';
+import Loader from './components/Loader';
+import FloatingBubbles from './components/FloatingBubbles';
 import Navigation from './components/Navigation';
+
 import Home from './pages/Home';
+import Silent from './pages/Silent';
 import About from './pages/About';
 import Services from './pages/Services';
 import Works from './pages/Works';
-import Silent from './pages/Silent';
 import Contact from './pages/Contact';
-import Loader from './components/Loader';
 
 function App() {
-  const [loading, setLoading] = useState(true);
+  const [showLoader, setShowLoader] = useState(true);
+  const [reveal, setReveal] = useState(false);
 
-  // prevent scroll while loading
   useEffect(() => {
-    if (loading) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'auto';
+    if ('scrollRestoration' in window.history) {
+      window.history.scrollRestoration = 'manual';
     }
-  }, [loading]);
+    window.scrollTo(0, 0);
+  }, []);
 
-  if (loading) {
-    return <Loader onFinish={() => setLoading(false)} />;
-  }
+  useEffect(() => {
+    document.body.style.overflow = showLoader ? 'hidden' : 'auto';
+  }, [showLoader]);
 
   return (
-    <div className="min-h-screen animate-slideDown bg-[#f6f1ea]">
+    <>
+      {showLoader && (
+        <Loader
+          onExitStart={() => setReveal(true)}
+          onFinish={() => setShowLoader(false)}
+        />
+      )}
+
+      {/* ✅ NAVIGATION MUST BE OUTSIDE TRANSFORM */}
       <Navigation />
+      <FloatingBubbles />
 
-      <main>
-        <section id="home"><Home /></section>
-        <section id="about"><About /></section>
-        <section id="services"><Services /></section>
-        <section id="works"><Works /></section>
-        <section id="silent"><Silent /></section>
-        <section id="contact"><Contact /></section>
-      </main>
+      {/* APP CONTENT SLIDES UP */}
+      <div
+        className={`min-h-screen bg-[#f6f1ea] transition-transform duration-[900ms] ease-[cubic-bezier(0.77,0,0.175,1)]
+        ${reveal ? 'translate-y-0' : 'translate-y-full'}`}
+      >
+        <main>
+          <section id="home"><Home /></section>
+          <section id="silent"><Silent /></section>
+          <section id="about"><About /></section>
+          <section id="services"><Services /></section>
+          <section id="works"><Works /></section>
+          <section id="contact"><Contact /></section>
+        </main>
 
-      <footer className="bg-earth-charcoal text-earth-beige py-12 text-center">
-        © {new Date().getFullYear()} Cosmos Media & Productions
-      </footer>
-
-      {/* Global styles for website entrance */}
-      <style jsx global>{`
-        @keyframes slideDownEnter {
-          0% {
-            opacity: 0;
-            transform: translateY(100vh);
-          }
-          100% {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-        
-        .animate-slideDown {
-          animation: slideDownEnter 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s both;
-        }
-      `}</style>
-    </div>
+        <footer className="bg-earth-charcoal text-earth-beige py-12 text-center">
+          © {new Date().getFullYear()} Cosmos Media & Productions
+        </footer>
+      </div>
+    </>
   );
 }
 
