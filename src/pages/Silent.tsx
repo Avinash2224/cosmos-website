@@ -1,285 +1,3 @@
-// import FadeIn from '../components/FadeIn';
-// import { ChevronLeft, ChevronRight } from 'lucide-react';
-// import { useRef } from 'react';
-
-// interface ClientsProps {
-//   onNavigate: (page: string) => void;
-// }
-
-// export default function Clients({ onNavigate }: ClientsProps) {
-//   const row1Ref = useRef<HTMLDivElement>(null);
-//   const row2Ref = useRef<HTMLDivElement>(null);
-//   const row3Ref = useRef<HTMLDivElement>(null);
-
-//   const scroll = (ref: React.RefObject<HTMLDivElement>, direction: 'left' | 'right') => {
-//     if (ref.current) {
-//       const scrollAmount = 400;
-//       ref.current.scrollBy({
-//         left: direction === 'left' ? -scrollAmount : scrollAmount,
-//         behavior: 'smooth'
-//       });
-//     }
-//   };
-
-//   const clientsRow1 = [
-//     { name: 'Red Bull', logo: 'https://logos-world.net/wp-content/uploads/2020/11/Red-Bull-Logo.png' },
-//     { name: 'Government of India', logo: 'https://upload.wikimedia.org/wikipedia/commons/5/55/Emblem_of_India.svg' },
-//     { name: 'Irrigation Department', logo: 'https://upload.wikimedia.org/wikipedia/commons/5/55/Emblem_of_India.svg' },
-//     { name: 'Maha Kumbh', logo: 'https://i.imgur.com/placeholder.png' },
-//     { name: 'Myntra', logo: 'https://logos-world.net/wp-content/uploads/2020/11/Myntra-Logo.png' },
-//     { name: 'A2 Cricket', logo: 'https://i.imgur.com/placeholder.png' },
-//     { name: 'Talli Tales', logo: 'https://i.imgur.com/placeholder.png' },
-//     { name: 'Lulu Mall', logo: 'https://www.lulumall.in/images/logo.png' },
-//     { name: 'Phoenix Pallassio', logo: 'https://www.thephoenixmills.com/images/logo.png' },
-//     { name: 'Sarovar Portico', logo: 'https://www.sarovarhotels.com/images/logo.png' },
-//     { name: 'Fortune Park', logo: 'https://www.fortunehotels.in/images/logo.png' },
-//     { name: 'Repetwahr', logo: 'https://i.imgur.com/placeholder.png' },
-//     { name: 'Eight Restaurant', logo: 'https://i.imgur.com/placeholder.png' },
-//   ];
-
-//   const clientsRow2 = [
-//     { name: 'Vara', logo: 'https://i.imgur.com/placeholder.png' },
-//     { name: 'FoSho', logo: 'https://i.imgur.com/placeholder.png' },
-//     { name: 'Chhappan Bhog', logo: 'https://i.imgur.com/placeholder.png' },
-//     { name: 'Talllk', logo: 'https://i.imgur.com/placeholder.png' },
-//     { name: 'Kokkam Coffee', logo: 'https://i.imgur.com/placeholder.png' },
-//     { name: 'FICCI', logo: 'https://ficci.in/images/ficci-logo.png' },
-//     { name: 'Badri Jewellers', logo: 'https://i.imgur.com/placeholder.png' },
-//     { name: 'Ruminaari', logo: 'https://i.imgur.com/placeholder.png' },
-//     { name: 'Maison Mahogany', logo: 'https://i.imgur.com/placeholder.png' },
-//     { name: 'Radio Mirchi', logo: 'https://upload.wikimedia.org/wikipedia/en/f/f5/Radio_Mirchi_Logo.png' },
-//     { name: 'Clarks Awadh', logo: 'https://i.imgur.com/placeholder.png' },
-//     { name: 'Old Spice', logo: 'https://logos-world.net/wp-content/uploads/2020/09/Old-Spice-Logo.png' },
-//     { name: 'Mandala Fest', logo: 'https://i.imgur.com/placeholder.png' },
-//   ];
-
-//   const clientsRow3 = [
-//     { name: 'KC Suits', logo: 'https://i.imgur.com/placeholder.png' },
-//     { name: 'Hues', logo: 'https://i.imgur.com/placeholder.png' },
-//     { name: 'Starbucks', logo: 'https://logos-world.net/wp-content/uploads/2020/09/Starbucks-Logo.png' },
-//     { name: 'OPPO', logo: 'https://logos-world.net/wp-content/uploads/2020/07/OPPO-Logo.png' },
-//     { name: 'Pickle Enough', logo: 'https://i.imgur.com/placeholder.png' },
-//     { name: 'Dove', logo: 'https://logos-world.net/wp-content/uploads/2020/09/Dove-Logo.png' },
-//     { name: 'Garnier', logo: 'https://logos-world.net/wp-content/uploads/2020/11/Garnier-Logo.png' },
-//     { name: 'ORO', logo: 'https://i.imgur.com/placeholder.png' },
-//     { name: 'Crystal Studio', logo: 'https://i.imgur.com/placeholder.png' },
-//     { name: 'Jugal Kishore', logo: 'https://i.imgur.com/placeholder.png' },
-//     { name: 'IHS School', logo: 'https://i.imgur.com/placeholder.png' },
-//     { name: 'Easy Buy', logo: 'https://i.imgur.com/placeholder.png' },
-//     { name: 'Lettering Co', logo: 'https://i.imgur.com/placeholder.png' },
-//     { name: 'Le Press', logo: 'https://i.imgur.com/placeholder.png' },
-//   ];
-
-//   return (
-//     <div>
-//       {/* Hero Section */}
-     
-
-//       {/* Infinite Scrolling Clients Section */}
-//       <section className="py-24 bg-earth-cream overflow-hidden">
-//         <div className="max-w-7xl mx-auto px-6 lg:px-12 mb-16">
-//           <FadeIn>
-//             <h2 className="font-serif text-4xl md:text-5xl text-earth-charcoal mb-6 text-center">
-//               Brands We've Worked With
-//             </h2>
-//             <p className="text-earth-stone text-center text-lg max-w-3xl mx-auto leading-relaxed">
-//               From global giants to innovative startups, we've had the privilege of partnering with incredible brands to bring their visions to life.
-//             </p>
-//           </FadeIn>
-//         </div>
-
-//         {/* Row 1 - Scroll Right to Left */}
-//         <div className="relative mb-12 group/row">
-//           <button
-//             onClick={() => scroll(row1Ref, 'left')}
-//             className="absolute left-4 top-1/2 -translate-y-1/2 z-10 text-earth-charcoal hover:text-earth-brown opacity-0 group-hover/row:opacity-100 transition-all duration-300 hover:scale-125"
-//             aria-label="Scroll left"
-//           >
-//             <ChevronLeft size={40} strokeWidth={2.5} />
-//           </button>
-//           <button
-//             onClick={() => scroll(row1Ref, 'right')}
-//             className="absolute right-4 top-1/2 -translate-y-1/2 z-10 text-earth-charcoal hover:text-earth-brown opacity-0 group-hover/row:opacity-100 transition-all duration-300 hover:scale-125"
-//             aria-label="Scroll right"
-//           >
-//             <ChevronRight size={40} strokeWidth={2.5} />
-//           </button>
-//           <div ref={row1Ref} className="flex overflow-x-auto scrollbar-hide scroll-smooth">
-//             <div className="flex animate-scroll-rtl">
-//               {[...clientsRow1, ...clientsRow1, ...clientsRow1].map((client, index) => (
-//                 <div
-//                   key={`row1-${index}`}
-//                   className="flex-shrink-0 mx-6 group"
-//                 >
-//                   <div className="bg-white px-12 py-8 min-w-[280px] flex items-center justify-center h-32 transition-all duration-500 hover:bg-earth-beige hover:scale-105 hover:shadow-2xl">
-//                     <img
-//                       src={client.logo}
-//                       alt={client.name}
-//                       className="max-w-[200px] max-h-[80px] object-contain filter grayscale group-hover:grayscale-0 transition-all duration-500"
-//                       onError={(e) => {
-//                         const target = e.target as HTMLImageElement;
-//                         target.style.display = 'none';
-//                         const parent = target.parentElement;
-//                         if (parent && !parent.querySelector('.fallback-text')) {
-//                           const textDiv = document.createElement('div');
-//                           textDiv.className = 'fallback-text text-earth-charcoal font-semibold text-xl text-center';
-//                           textDiv.textContent = client.name;
-//                           parent.appendChild(textDiv);
-//                         }
-//                       }}
-//                     />
-//                   </div>
-//                 </div>
-//               ))}
-//             </div>
-//           </div>
-//         </div>
-
-//         {/* Row 2 - Scroll Left to Right */}
-//         <div className="relative mb-12 group/row">
-//           <button
-//             onClick={() => scroll(row2Ref, 'left')}
-//             className="absolute left-4 top-1/2 -translate-y-1/2 z-10 text-earth-charcoal hover:text-earth-brown opacity-0 group-hover/row:opacity-100 transition-all duration-300 hover:scale-125"
-//             aria-label="Scroll left"
-//           >
-//             <ChevronLeft size={40} strokeWidth={2.5} />
-//           </button>
-//           <button
-//             onClick={() => scroll(row2Ref, 'right')}
-//             className="absolute right-4 top-1/2 -translate-y-1/2 z-10 text-earth-charcoal hover:text-earth-brown opacity-0 group-hover/row:opacity-100 transition-all duration-300 hover:scale-125"
-//             aria-label="Scroll right"
-//           >
-//             <ChevronRight size={40} strokeWidth={2.5} />
-//           </button>
-//           <div ref={row2Ref} className="flex overflow-x-auto scrollbar-hide scroll-smooth">
-//             <div className="flex animate-scroll-ltr">
-//               {[...clientsRow2, ...clientsRow2, ...clientsRow2].map((client, index) => (
-//                 <div
-//                   key={`row2-${index}`}
-//                   className="flex-shrink-0 mx-6 group"
-//                 >
-//                   <div className="bg-white px-12 py-8 min-w-[280px] flex items-center justify-center h-32 transition-all duration-500 hover:bg-earth-beige hover:scale-105 hover:shadow-2xl">
-//                     <img
-//                       src={client.logo}
-//                       alt={client.name}
-//                       className="max-w-[200px] max-h-[80px] object-contain filter grayscale group-hover:grayscale-0 transition-all duration-500"
-//                       onError={(e) => {
-//                         const target = e.target as HTMLImageElement;
-//                         target.style.display = 'none';
-//                         const parent = target.parentElement;
-//                         if (parent && !parent.querySelector('.fallback-text')) {
-//                           const textDiv = document.createElement('div');
-//                           textDiv.className = 'fallback-text text-earth-charcoal font-semibold text-xl text-center';
-//                           textDiv.textContent = client.name;
-//                           parent.appendChild(textDiv);
-//                         }
-//                       }}
-//                     />
-//                   </div>
-//                 </div>
-//               ))}
-//             </div>
-//           </div>
-//         </div>
-
-//         {/* Row 3 - Scroll Right to Left */}
-//         <div className="relative group/row">
-//           <button
-//             onClick={() => scroll(row3Ref, 'left')}
-//             className="absolute left-4 top-1/2 -translate-y-1/2 z-10 text-earth-charcoal hover:text-earth-brown opacity-0 group-hover/row:opacity-100 transition-all duration-300 hover:scale-125"
-//             aria-label="Scroll left"
-//           >
-//             <ChevronLeft size={40} strokeWidth={2.5} />
-//           </button>
-//           <button
-//             onClick={() => scroll(row3Ref, 'right')}
-//             className="absolute right-4 top-1/2 -translate-y-1/2 z-10 text-earth-charcoal hover:text-earth-brown opacity-0 group-hover/row:opacity-100 transition-all duration-300 hover:scale-125"
-//             aria-label="Scroll right"
-//           >
-//             <ChevronRight size={40} strokeWidth={2.5} />
-//           </button>
-//           <div ref={row3Ref} className="flex overflow-x-auto scrollbar-hide scroll-smooth">
-//             <div className="flex animate-scroll-rtl-slow">
-//               {[...clientsRow3, ...clientsRow3, ...clientsRow3].map((client, index) => (
-//                 <div
-//                   key={`row3-${index}`}
-//                   className="flex-shrink-0 mx-6 group"
-//                 >
-//                   <div className="bg-white px-12 py-8 min-w-[280px] flex items-center justify-center h-32 transition-all duration-500 hover:bg-earth-beige hover:scale-105 hover:shadow-2xl">
-//                     <img
-//                       src={client.logo}
-//                       alt={client.name}
-//                       className="max-w-[200px] max-h-[80px] object-contain filter grayscale group-hover:grayscale-0 transition-all duration-500"
-//                       onError={(e) => {
-//                         const target = e.target as HTMLImageElement;
-//                         target.style.display = 'none';
-//                         const parent = target.parentElement;
-//                         if (parent && !parent.querySelector('.fallback-text')) {
-//                           const textDiv = document.createElement('div');
-//                           textDiv.className = 'fallback-text text-earth-charcoal font-semibold text-xl text-center';
-//                           textDiv.textContent = client.name;
-//                           parent.appendChild(textDiv);
-//                         }
-//                       }}
-//                     />
-//                   </div>
-//                 </div>
-//               ))}
-//             </div>
-//           </div>
-//         </div>
-//       </section>
-
-//       <style>{`
-//         /* Hide scrollbar */
-//         .scrollbar-hide {
-//           -ms-overflow-style: none;
-//           scrollbar-width: none;
-//         }
-//         .scrollbar-hide::-webkit-scrollbar {
-//           display: none;
-//         }
-
-//         @keyframes scroll-rtl {
-//           0% {
-//             transform: translateX(0);
-//           }
-//           100% {
-//             transform: translateX(-50%);
-//           }
-//         }
-
-//         @keyframes scroll-ltr {
-//           0% {
-//             transform: translateX(-50%);
-//           }
-//           100% {
-//             transform: translateX(0);
-//           }
-//         }
-
-//         .animate-scroll-rtl {
-//           animation: scroll-rtl 40s linear infinite;
-//         }
-
-//         .animate-scroll-ltr {
-//           animation: scroll-ltr 70s linear infinite;
-//         }
-
-//         .animate-scroll-rtl-slow {
-//           animation: scroll-rtl 40s linear infinite;
-//         }
-
-//         .animate-scroll-rtl:hover,
-//         .animate-scroll-ltr:hover,
-//         .animate-scroll-rtl-slow:hover {
-//           animation-play-state: paused;
-//         }
-//       `}</style>
-//     </div>
-//   );
-// }
-
 import FadeIn from '../components/FadeIn';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { useRef } from 'react';
@@ -313,7 +31,7 @@ export default function Clients({ onNavigate }: ClientsProps) {
     },
     {
       name: 'Irrigation Department',
-      logo: 'https://upload.wikimedia.org/wikipedia/commons/5/55/Emblem_of_India.svg',
+      logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZTyhZOh6v2eOPityupLbrgiYWd2vxJjZvhp6ehLH6VK4s5mFsx6ABZKYjhZIAMLuZLuI&usqp=CAU',
     },
     {
       name: 'Maha Kumbh',
@@ -359,7 +77,7 @@ export default function Clients({ onNavigate }: ClientsProps) {
 const clientsRow2 = [
   {
     name: 'Vara',
-    logo: 'https://media.licdn.com/dms/image/v2/C4E0BAQFJ4EpGK1INWQ/company-logo_200_200/company-logo_200_200/0/1630619954413/vara_united_logo?e=2147483647&v=beta&t=Eq_XgVBMJTxGHGiBDVc0k71WrwZJcLUqsDhBtNWDbks',
+    logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGJnm5FfvNEIJ2FlXQXK0oZAkVP8dke0jOJAhHaPSs3vRL7_5M5N7geowPIT9dgsGELTg&usqp=CAU',
   },
   {
     name: 'FoSho',
@@ -371,7 +89,7 @@ const clientsRow2 = [
   },
   {
     name: 'Talllk',
-    logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8s6EJ1uPzRk9J8x8p6ZKcFqk5b4Jc5w0zw&s',
+    logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHijyikN0y9ziZvmMzqlhbyU3HK45uQUDsiidQmMKCatAEvgkhIngylaDxDPmbL0vcmIE&usqp=CAU',
   },
   {
     name: 'Kokkam Coffee',
@@ -379,7 +97,7 @@ const clientsRow2 = [
   },
   {
     name: 'FICCI',
-    logo: 'https://ficci.in/images/ficci-logo.png',
+    logo: 'https://upload.wikimedia.org/wikipedia/en/f/f4/FICCI_logo.svg',
   },
   {
     name: 'Badri Jewellers',
@@ -387,15 +105,15 @@ const clientsRow2 = [
   },
   {
     name: 'Ruminaari',
-    logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0Z0b8xH5k2Tz5Q5n0KcK9qP3ZBz4m9X6Xw&s',
+    logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnA5f-sxI7WFyXS8AppsU3fWm0xM8XCUO7da8RAilpwJNKYTeB_xzrs-GQUBcR_LASDNI&usqp=CAU',
   },
   {
     name: 'Maison Mahogany',
-    logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzq6kG0QbG5mQm0N2r9D1bKk5yF7k0Vn3xw&s',
+    logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNNK1h2-iBDzHaqn6afiA-Qe03LGbH7oDQ7DIMlg9NL2pUIB3spk470Fz10Ij0R-bDguY&usqp=CAU',
   },
   {
     name: 'Radio Mirchi',
-    logo: 'https://upload.wikimedia.org/wikipedia/en/f/f5/Radio_Mirchi_Logo.png',
+    logo: 'https://upload.wikimedia.org/wikipedia/en/a/a7/Radiomirchi.jpg',
   },
   {
     name: 'Clarks Awadh',
@@ -403,7 +121,7 @@ const clientsRow2 = [
   },
   {
     name: 'Old Spice',
-    logo: 'https://logos-world.net/wp-content/uploads/2020/09/Old-Spice-Logo.png',
+    logo: 'https://upload.wikimedia.org/wikipedia/en/9/94/Current_Old_Spice_Logo_2016.svg',
   },
   {
     name: 'Mandala Fest',
@@ -413,7 +131,7 @@ const clientsRow2 = [
 
 
   const clientsRow3 = [
-    { name: 'KC Suits', logo: 'https://i.imgur.com/placeholder.png' },
+    { name: 'KC Suits', logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcsC0jDs_jcLZrsB9TAH518LXuAWsc9yOoPz_f4xXRfW4iaTUUigaietLT-_tcmGtnfsY&usqp=CAU' },
     { name: 'Hues', logo: 'https://i.imgur.com/placeholder.png' },
     {
       name: 'Starbucks',
@@ -430,15 +148,15 @@ const clientsRow2 = [
     },
     {
       name: 'Garnier',
-      logo: 'https://logos-world.net/wp-content/uploads/2020/11/Garnier-Logo.png',
+      logo: 'https://images.seeklogo.com/logo-png/34/1/garnier-logo-png_seeklogo-349688.png',
     },
-    { name: 'ORO', logo: 'https://i.imgur.com/placeholder.png' },
-    { name: 'Crystal Studio', logo: 'https://i.imgur.com/placeholder.png' },
-    { name: 'Jugal Kishore', logo: 'https://i.imgur.com/placeholder.png' },
+    { name: 'ORO', logo: 'https://orogroup.in/wp-content/uploads/2024/04/LOGO2.png' },
+    { name: 'Crystal Studio', logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqkdU9k9o1InoXVT8CHUVtcquqmZlHNnj5pibqFFBAXwLdhuCNbgkNj-7QgTkcnJfQr2Q&usqp=CAU' },
+    { name: 'Jugal Kishore', logo: 'https://content.jdmagicbox.com/comp/lucknow/c2/0522px522.x522.201207122624.x1c2/catalogue/jugal-kishore-jewellers-and-bankers-lucknow-w09qg3uedu.jpg' },
     { name: 'IHS School', logo: 'https://i.imgur.com/placeholder.png' },
     { name: 'Easy Buy', logo: 'https://i.imgur.com/placeholder.png' },
     { name: 'Lettering Co', logo: 'https://i.imgur.com/placeholder.png' },
-    { name: 'Le Press', logo: 'https://i.imgur.com/placeholder.png' },
+    { name: 'Le Press', logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLo5mu_sXpd0bIWNpi0nDoIIRB0vMcaiS8XO1eyEdvvdLbdyQlNRahawX1Kl-Ocal5QGE&usqp=CAU' },
   ];
 
   return (
