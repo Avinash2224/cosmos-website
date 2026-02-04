@@ -132,7 +132,7 @@ export default function Services({ onNavigate }: ServicesProps) {
           <FadeIn>
             <h1
               className="text-5xl md:text-8xl text-white mb-6 tracking-wide"
-              style={{ fontFamily: 'Gotu, sans-serif' }}
+        style={{ fontFamily: "'Playfair Display', serif" }}
             >
               Our Services
             </h1>
