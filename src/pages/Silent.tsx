@@ -91,17 +91,17 @@ const clientsRow2 = [
     name: 'Talllk',
     logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHijyikN0y9ziZvmMzqlhbyU3HK45uQUDsiidQmMKCatAEvgkhIngylaDxDPmbL0vcmIE&usqp=CAU',
   },
-  {
-    name: 'Kokkam Coffee',
-    logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9wY1H3A3VbJx4QH7r7XbX4x9q7Zg4A9F0g&s',
-  },
+  // {
+  //   name: 'Kokkam Coffee',
+  //   logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9wY1H3A3VbJx4QH7r7XbX4x9q7Zg4A9F0g&s',
+  // },
   {
     name: 'FICCI',
     logo: 'https://upload.wikimedia.org/wikipedia/en/f/f4/FICCI_logo.svg',
   },
   {
-    name: 'Badri Jewellers',
-    logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1xv1D5s0b7N1bYx3kGmG9z4kFq0C3kzN9A&s',
+    name: 'Fresh factory',
+    logo: 'https://media.licdn.com/dms/image/v2/C4E0BAQHY4Y3Zu7c9Yg/company-logo_200_200/company-logo_200_200/0/1636743468188?e=2147483647&v=beta&t=rzPi6u-51-Gbj57AOv83wkMfjeKFPY2Wn_llvzYWcBk',
   },
   {
     name: 'Ruminaari',
@@ -141,7 +141,7 @@ const clientsRow2 = [
       name: 'OPPO',
       logo: 'https://brandlogos.net/wp-content/uploads/2022/08/oppo-logo_brandlogos.net_x21dk-512x512.png',
     },
-    { name: 'Pickle Enough', logo: 'https://i.imgur.com/placeholder.png' },
+    // { name: 'Pickle Enough', logo: 'https://i.imgur.com/placeholder.png' },
     {
       name: 'Dove',
       logo: 'https://logos-world.net/wp-content/uploads/2020/09/Dove-Logo.png',
@@ -153,9 +153,9 @@ const clientsRow2 = [
     { name: 'ORO', logo: 'https://orogroup.in/wp-content/uploads/2024/04/LOGO2.png' },
     { name: 'Crystal Studio', logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqkdU9k9o1InoXVT8CHUVtcquqmZlHNnj5pibqFFBAXwLdhuCNbgkNj-7QgTkcnJfQr2Q&usqp=CAU' },
     { name: 'Jugal Kishore', logo: 'https://content.jdmagicbox.com/comp/lucknow/c2/0522px522.x522.201207122624.x1c2/catalogue/jugal-kishore-jewellers-and-bankers-lucknow-w09qg3uedu.jpg' },
-    { name: 'IHS School', logo: 'https://i.imgur.com/placeholder.png' },
-    { name: 'Easy Buy', logo: 'https://i.imgur.com/placeholder.png' },
-    { name: 'Lettering Co', logo: 'https://i.imgur.com/placeholder.png' },
+    // { name: 'IHS School', logo: 'https://i.imgur.com/placeholder.png' },
+    { name: ' rostary coffee', logo: 'https://roasterycoffee.co.in/wp-content/uploads/2025/12/cropped-LOGO-2.png' },
+    { name: 'Lettering Co', logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4zZ2dLwLrfNljqy6pEXs5V8gXvqBCmNmbNGnG67Y8Xjbid7VyRDfxbo9yUOA-KeEuTqg&usqp=CAU' },
     { name: 'Le Press', logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLo5mu_sXpd0bIWNpi0nDoIIRB0vMcaiS8XO1eyEdvvdLbdyQlNRahawX1Kl-Ocal5QGE&usqp=CAU' },
   ];
 
