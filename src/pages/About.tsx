@@ -26,25 +26,26 @@ export default function About() {
   return (
     <div>
       {/* HERO SECTION */}
-      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/aboutbg.png')" }}
-        >
-          <div className="absolute inset-0 bg-earth-charcoal/50" />
-        </div>
+     <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+  <div
+    className="absolute inset-0 bg-cover bg-center"
+    style={{ backgroundImage: "url('/aboutbg.png')" }}
+  >
+    <div className="absolute inset-0 bg-earth-charcoal/50" />
+  </div>
 
-        <div className="relative z-10 text-center px-6 max-w-4xl">
-          <FadeIn>
-            <h1
-              className="text-5xl md:text-8xl text-white mb-6 tracking-wide"
-              style={{ fontFamily: 'Gotu, sans-serif' }}
-            >
-              About Us
-            </h1>
-          </FadeIn>
-        </div>
-      </section>
+  <div className="relative z-10 text-center px-6 max-w-4xl">
+    <FadeIn>
+      <h1
+        className="text-6xl md:text-[9.5rem] text-white mb-6 tracking-wide leading-tight"
+        style={{ fontFamily: "'Playfair Display', serif" }}
+      >
+        About Us
+      </h1>
+    </FadeIn>
+  </div>
+</section>
+
 
       {/* ABOUT CONTENT */}
       <section className="py-24 px-6 lg:px-12 bg-earth-cream">
