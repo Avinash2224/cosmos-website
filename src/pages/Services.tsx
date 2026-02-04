@@ -118,32 +118,39 @@ export default function Services({ onNavigate }: ServicesProps) {
   return (
     <div>
       {/* HERO SECTION */}
-      <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage: 'url(/servicesbg.png)',
-          }}
-        >
-          <div className="absolute inset-0 bg-earth-charcoal/60" />
-        </div>
+ <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
+  <div
+    className="absolute inset-0 bg-cover bg-center"
+    style={{ backgroundImage: 'url(/servicesbg.png)' }}
+  >
+    <div className="absolute inset-0 bg-earth-charcoal/60" />
+  </div>
 
-        <div className="relative z-10 text-center px-6 max-w-4xl">
-          <FadeIn>
-            <h1
-              className="text-5xl md:text-8xl text-white mb-6 tracking-wide"
+  <div className="relative z-10 text-center px-6">
+    <FadeIn>
+      <h1
+        className="
+          mx-auto
+          max-w-2xl
+          text-[clamp(3rem,7vw,6.5rem)]
+          text-white
+          mb-6
+          leading-tight
+        "
         style={{ fontFamily: "'Playfair Display', serif" }}
-            >
-              Our Services
-            </h1>
-          </FadeIn>
-          <FadeIn delay={200}>
-            <p className="text-earth-beige text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-              Comprehensive creative solutions across every medium and platform
-            </p>
-          </FadeIn>
-        </div>
-      </section>
+      >
+        Our Services
+      </h1>
+    </FadeIn>
+
+    <FadeIn delay={200}>
+      <p className="mx-auto max-w-2xl text-earth-beige text-lg md:text-xl leading-relaxed">
+        Comprehensive creative solutions across every medium and platform
+      </p>
+    </FadeIn>
+  </div>
+</section>
+
 
       {/* SERVICES GRID */}
       <section className="py-24 px-6 lg:px-12 bg-earth-cream">
