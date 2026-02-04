@@ -117,7 +117,7 @@ const clientsRow2 = [
   },
   {
     name: 'Clarks Awadh',
-    logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq5FQq8P3zQF7Kx4JZ5F1ZbYk3M9JcN2B7Q&s',
+    logo: 'https://www.nsdcjobx.com/Employer/EmployerProfileImg/d5887119-8ef9-4440-982d-975a611f2885.png',
   },
   {
     name: 'Old Spice',
@@ -125,14 +125,14 @@ const clientsRow2 = [
   },
   {
     name: 'Mandala Fest',
-    logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6kQJ2m4x4Pz5Tz0q3F7KpZq0yZk2m1R7nA&s',
+    logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7VyBSAkfCkKVgZhq8wqTB_OVZqveJoudQHg6Uhi8rMKA_4Diw3WbD5o-sWOpLVYnspQA&usqp=CAU',
   },
 ];
 
 
   const clientsRow3 = [
     { name: 'KC Suits', logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcsC0jDs_jcLZrsB9TAH518LXuAWsc9yOoPz_f4xXRfW4iaTUUigaietLT-_tcmGtnfsY&usqp=CAU' },
-    { name: 'Hues', logo: 'https://i.imgur.com/placeholder.png' },
+    { name: 'Hues', logo: 'https://chikankarihues.com/cdn/shop/files/Untitled_design_2_b2693963-ef3e-44c7-9de8-2ec70e62273e.png?v=1715406738' },
     {
       name: 'Starbucks',
       logo: 'https://logos-world.net/wp-content/uploads/2020/09/Starbucks-Logo.png',
