@@ -58,26 +58,19 @@ export default function About() {
 
           <FadeIn delay={100}>
             <p className="text-earth-stone text-lg leading-relaxed mb-6">
-              Cosmos is an independent film and media production house driven by stories, not trends.
-
-For over a decade, we’ve been working at the intersection of filmmaking, visual storytelling, design, and narrative strategy, creating films that feel intentional, human, and lived-in. What began as a deep love for cinema has evolved into a full service creative production studio collaborating across brands, cultures, and formats.
+              Cosmos Media & Productions, founded in 2019, is an independent creative production studio driven by stories, emotion, and cinematic vision. Working at the intersection of filmmaking, visual storytelling, design, narrative strategy, with music production, Cosmos creates meaningful content that feels human, purposeful, and deeply connected to reality
 
 
               <br /><br />
-           Over the years, Cosmos has partnered with 50+ brands globally, working closely with founders, marketing teams, and creative leaders to translate ideas into brand films, commercials, digital campaigns, and immersive visual experiences. From advertising films and product stories to experimental visuals and long form content, our process always begins the same way: listening first.
-
-We don’t believe in one size fits all production. As a bespoke creative studio, every project is treated as its own universe shaped through collaboration, trust, and thoughtful execution. We value process as much as outcome, and emotion as much as message.
+         What began as a passion for cinema has grown into a full service production house collaborating with brands, startups, creative leaders, and marketing teams across diverse industries and formats. Over the years, Cosmos has partnered with 50+ national and international brands, transforming ideas into memorable brand films, advertising campaigns, documentaries, digital content, jingles, and immersive visual experiences.
+At Cosmos, every project is treated as a unique world of its own. The process always begins with listening & understanding the story, emotion, and purpose behind every idea. Through collaboration, trust, and thoughtful execution, Cosmos crafts films and creative experiences that connect with audiences beyond the screen.
 
             </p>
           </FadeIn>
 
           <FadeIn delay={200}>
             <p className="text-earth-stone text-lg leading-relaxed">
-             Cosmos is intentionally independent.
-That independence allows us the freedom to think deeply, move deliberately, and stay honest to the story being told without compromising creative integrity.
-
-Cosmos exists as a creative home for brands, startups, and ideas seeking more than just visuals.
-For stories that need time, intention, and meaning and films that resonate beyond the screen.
+    Independent by choice, Cosmos values creative integrity over trends. This freedom allows the studio to think deeply, create honestly, and remain true to every story it tells. More than just a production house, Cosmos exists as a creative home for stories that deserve meaning, time, and emotion - stories that stay in people’s hearts long after the screen fades to black.
             </p>
           </FadeIn>
         </div>
@@ -95,12 +88,9 @@ For stories that need time, intention, and meaning and films that resonate beyon
           <FadeIn delay={100}>
             <div className="bg-earth-beige p-12 border-l-4 border-earth-clay">
               <p className="text-earth-charcoal text-xl font-serif italic leading-relaxed">
-                Because we don't rush stories.
+                Because at COSMOS, we create stories that stay with people for years.
                 <br /><br />
-                At Cosmos, we believe meaningful work comes from time, trust, and
-                attention. We work closely with our clients—listening deeply,
-                questioning thoughtfully, and building narratives together rather
-                than imposing formulas.
+                We believe meaningful work comes from trust, time, understanding, and genuine client connection. Instead of following commercial formulas, we listen deeply, collaborate closely, and shape every story with honesty, purpose, and emotion.
               </p>
 
               {/* READ MORE CONTENT */}
@@ -110,16 +100,11 @@ For stories that need time, intention, and meaning and films that resonate beyon
                 }`}
               >
                 <p className="mt-6 text-earth-charcoal text-xl font-serif italic leading-relaxed">
-                  With over a decade of experience and collaborations across 500+
-                  global brands, we bring perspective without losing sensitivity.
-                  We understand scale, but we care more about intent.
+                  With over a decade of experience and collaborations with 50+ global brands, we bring creative vision with human sensitivity. We understand scale and professionalism, but we value intention above everything else.
                   <br /><br />
-                  We choose independence so we can stay flexible, personal, and
-                  involved at every step of the process. No layers. No shortcuts.
-                  Just a team that treats your story as carefully as its own.
+                  No shortcuts. No unnecessary layers. Just a passionate team that treats your story with the same care and commitment as its own.
                   <br /><br />
-                  If you're looking for work that feels human, considered, and
-                  lasting—Cosmos is built for that.
+                  If you believe in work that feels real, meaningful, and leaves a lasting emotional impact, Cosmos is a name you can trust.
                 </p>
               </div>
 
