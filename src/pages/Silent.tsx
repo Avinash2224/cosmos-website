@@ -23,7 +23,7 @@ export default function Clients({ onNavigate }: ClientsProps) {
   const clientsRow1 = [
     {
       name: 'Red Bull',
-      logo: 'https://logos-world.net/wp-content/uploads/2020/11/Red-Bull-Logo.png',
+      logo: 'https://icon2.cleanpng.com/lnd/20241224/fe/03b86b265b149015555a524552f43d.webp',
     },
     {
       name: 'Government of India',
@@ -135,7 +135,7 @@ const clientsRow2 = [
     { name: 'Hues', logo: 'https://chikankarihues.com/cdn/shop/files/Untitled_design_2_b2693963-ef3e-44c7-9de8-2ec70e62273e.png?v=1715406738' },
     {
       name: 'Starbucks',
-      logo: 'https://logos-world.net/wp-content/uploads/2020/09/Starbucks-Logo.png',
+      logo: 'https://upload.wikimedia.org/wikipedia/sco/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1280px-Starbucks_Corporation_Logo_2011.svg.png',
     },
     {
       name: 'OPPO',
@@ -144,7 +144,7 @@ const clientsRow2 = [
     // { name: 'Pickle Enough', logo: 'https://i.imgur.com/placeholder.png' },
     {
       name: 'Dove',
-      logo: 'https://logos-world.net/wp-content/uploads/2020/09/Dove-Logo.png',
+      logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvhiVQX0xOk89VDPF3IuZnaTsT0Z4xvCTgVA&s',
     },
     {
       name: 'Garnier',
